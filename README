@@ -1,0 +1,31 @@
+//---------------------------------------
+To compile the code
+
+1. make sure blas and lapack libraries are installed, and change the
+library path variable LIBS in makefile.opt accordingly.
+
+2. go to directory common, and type
+	make libbdsurf.a
+
+3. go to directory bdsurf, and type
+	make libbdsurf.a
+
+4. go to directory bdsurf, and type
+	make tt0
+	make tt1
+
+//---------------------------------------
+To run the test examples:
+
+simple viewer for the catmull-clark surface
+	tt0 options_0
+
+simple viewer for the high-order manifold-based surface
+	tt1 options_1
+
+//---------------------------------------
+NOTICE:
+
+All the meshfiles have file extension .wrl. However the file format is
+a little bit differnt from the standard wrl file. The difference is
+minor and the conversion is obvious.
